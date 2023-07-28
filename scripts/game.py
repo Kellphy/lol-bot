@@ -90,11 +90,8 @@ def play_game():
                     utils.press('p', LEAGUE_GAME_CLIENT_WINNAME)
                     sleep(1)
                     utils.click(GAME_ALL_ITEMS_RATIO, LEAGUE_GAME_CLIENT_WINNAME, 1)
-                    for _ in range(2):  # just in case tbh, don't need for loop
-                        scale = tuple([random.randint(1, STARTER_ITEMS_TO_BUY) * x for x in GAME_BUY_ITEM_RATIO_INCREASE])  # there are less starter items
-                        positions = tuple(sum(x) for x in zip(GAME_BUY_STARTER_ITEM_RATIO, scale))  # add tuple to default item position ratio https://stackoverflow.com/questions/1169725/adding-values-from-tuples-of-same-length
-                        utils.click(positions, LEAGUE_GAME_CLIENT_WINNAME, 1)
-                        utils.click(GAME_BUY_PURCHASE_RATIO, LEAGUE_GAME_CLIENT_WINNAME, 1)
+                    utils.click(GAME_BUY_STARTER_ITEM_RATIO, LEAGUE_GAME_CLIENT_WINNAME, 1)
+                    utils.click(GAME_BUY_PURCHASE_RATIO, LEAGUE_GAME_CLIENT_WINNAME, 1)
                     utils.press('p', LEAGUE_GAME_CLIENT_WINNAME)
                     utils.press('y')
                     screen_locked = True
@@ -133,13 +130,8 @@ def play_game():
 
                 # Open shop and buy items
                 utils.press('p', LEAGUE_GAME_CLIENT_WINNAME)
-                for _ in range(ITEMS_TO_BUY):
-                    scale = tuple([random.randint(1, ITEMS_TO_BUY) * x for x in
-                                   GAME_BUY_ITEM_RATIO_INCREASE])  # multiply tuple by scaler https://stackoverflow.com/questions/1781970/multiplying-a-tuple-by-a-scalar
-                    positions = tuple(sum(x) for x in zip(GAME_BUY_EPIC_ITEM_RATIO,
-                                                          scale))  # add tuple to default item position ratio https://stackoverflow.com/questions/1169725/adding-values-from-tuples-of-same-length
-                    utils.click(positions, LEAGUE_GAME_CLIENT_WINNAME, .5)
-                    utils.click(GAME_BUY_PURCHASE_RATIO, LEAGUE_GAME_CLIENT_WINNAME, .5)
+                utils.click(GAME_BUY_STARTER_ITEM_RATIO, LEAGUE_GAME_CLIENT_WINNAME, 1)
+                utils.click(GAME_BUY_PURCHASE_RATIO, LEAGUE_GAME_CLIENT_WINNAME, 1)
                 utils.press('p', LEAGUE_GAME_CLIENT_WINNAME)
 
                 # Go to lane
