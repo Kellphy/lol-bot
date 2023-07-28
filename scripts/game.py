@@ -149,11 +149,11 @@ def play_game():
                     in_lane = False
 
                 # Main attack move loop. This sequence de-aggros them and prevents them from dying 50 times. In the early game they are actually positive most games
-                loops = 7
+                loops = 3
                 for i in range(loops):
                     # Attack
                     utils.attack_move_click(GAME_MINI_MAP_ENEMY_NEXUS)
-                    sleep(8)
+                    sleep(24)
                     # De-aggro or Ult and Back
                     if i != loops - 1:
                         utils.right_click(backup_location, LEAGUE_GAME_CLIENT_WINNAME)
