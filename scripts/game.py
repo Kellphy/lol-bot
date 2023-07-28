@@ -153,11 +153,11 @@ def play_game():
                 for i in range(loops):
                     # Attack
                     utils.attack_move_click(GAME_MINI_MAP_ENEMY_NEXUS)
-                    sleep(24)
+                    sleep(8)
                     # De-aggro or Ult and Back
                     if i != loops - 1:
                         utils.right_click(backup_location, LEAGUE_GAME_CLIENT_WINNAME)
-                        sleep(8)
+                        sleep(0.25)
                     else:
                         # Ult
                         utils.press('f', LEAGUE_GAME_CLIENT_WINNAME)
