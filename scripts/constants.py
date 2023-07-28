@@ -33,7 +33,7 @@ GAME_LOBBY_ID = BEGINNER_BOTS_GAME_LOBBY_ID
 EARLY_GAME_END_TIME = 600
 STARTER_ITEMS_TO_BUY = 4
 ITEMS_TO_BUY = 6
-CHAMPS = [222, 21, 18, 22, 67]
+CHAMPS = [222, 21, 18, 22, 67, 42, 81, 17, 29, 15] # Jinx, MF, Tristana, Ashe, Vayne, Corki, Ezreal, Teemo, Twitch, Sivir
 ASK_4_MID_DIALOG = [
     "mid"
 ]

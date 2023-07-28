@@ -119,6 +119,8 @@ def handle_game_lobby():
     champ_index = 0
     f2p_index = 0
     requested = False
+    random.shuffle(CHAMPS) # Shuffle the array in place
+    
     while r.status_code == 200:
         lobby_state = cs['timer']['phase']
         lobby_time_left = int(float(cs['timer']['adjustedTimeLeftInPhase']) / 1000)
