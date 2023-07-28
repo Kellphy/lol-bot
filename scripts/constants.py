@@ -40,7 +40,7 @@ ASK_4_MID_DIALOG = [
 
 # GAME BUTTON RATIOS
 GAME_ALL_ITEMS_RATIO = (0.2019, 0.2349)
-GAME_BUY_STARTER_ITEM_RATIO = (0.3, 0.5)  # Based on the default shop open position on the all items tab
+GAME_BUY_STARTER_ITEM_RATIO = (0.25, 0.5)  # Based on the default shop open position on the all items tab
 GAME_BUY_PURCHASE_RATIO = (0.7644, 0.8216)  # Based on the default shop open position
 GAME_MINI_MAP_UNDER_TURRET = (0.8825, 0.8875)
 GAME_MINI_MAP_CENTER_MID = (0.8981, 0.8674)
