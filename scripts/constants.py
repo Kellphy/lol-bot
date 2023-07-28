@@ -1,7 +1,7 @@
 import os
 
 # PATHS
-LEAGUE_DIR = 'C:/Program Files/Riot Games/League of Legends'
+LEAGUE_DIR = 'C:/Riot Games/League of Legends'
 LEAGUE_PATH = LEAGUE_DIR + '/LeagueClient'
 LOCKFILE_PATH = LEAGUE_DIR + "/lockfile"
 LEAGUE_GAME_CONFIG_PATH = LEAGUE_DIR + '/Config/game.cfg'
