@@ -157,7 +157,7 @@ def play_game():
                     # De-aggro or Ult and Back
                     if i != loops - 1:
                         utils.right_click(backup_location, LEAGUE_GAME_CLIENT_WINNAME)
-                        sleep(1)
+                        sleep(8)
                     else:
                         # Ult
                         utils.press('f', LEAGUE_GAME_CLIENT_WINNAME)
